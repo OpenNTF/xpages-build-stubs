@@ -1,10 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+	<project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openntf.xsp.stubs</groupId>
 	<artifactId>parent-xsp-stubs</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 	
 	<inceptionYear>2024</inceptionYear>
@@ -41,10 +41,19 @@
 	</properties>
 	
 	<modules>
-		<module>com.ibm.xsp.bootstrap</module>
-		<module>com.ibm.domino.xsp.adapter</module>
+		<module>com.ibm.pvc.jndi.provider.java</module>
+		<module>com.ibm.pvc.servlet</module>
+		<module>com.ibm.domino.xsp.bootstrap</module>
+		<module>com.ibm.domino.xsp.bridge.http</module>
+		<module>com.ibm.domino.napi</module>
 		<module>com.ibm.designer.lib.jsf</module>
+		<module>com.ibm.domino.xsp.adapter</module>
 		<module>com.ibm.xsp.core</module>
+		<module>com.ibm.xsp.extsn</module>
+		<module>com.ibm.xsp.designer</module>
+		<module>com.ibm.xsp.domino</module>
+		<module>com.ibm.xsp.extlib.core</module>
+		<module>com.ibm.xsp.extlib.controls</module>
 	</modules>
 	
 	<pluginRepositories>
@@ -55,10 +64,13 @@
 		</pluginRepository>
 	</pluginRepositories>
 	
-	<dependencyManagement>
-		<dependencies>
-		</dependencies>
-	</dependencyManagement>
+	<repositories>
+		<repository>
+			<id>artifactory.openntf.org</id>
+			<name>artifactory.openntf.org</name>
+			<url>https://artifactory.openntf.org/openntf</url>
+		</repository>
+	</repositories>
 	
 	<build>
 		<pluginManagement>
@@ -91,15 +103,18 @@
 					<version>5.1.9</version>
 					<extensions>true</extensions>
 					<configuration>
-						<supportedProjectTypes>
-							<supportedProjectType>jar</supportedProjectType>
-							<supportedProjectType>bundle</supportedProjectType>
-						</supportedProjectTypes>
 						<supportIncrementalBuild>true</supportIncrementalBuild>
+						<niceManifest>true</niceManifest>
 						<instructions>
+							<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 							<Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
 							<Automatic-Module-Name>${project.artifactId}</Automatic-Module-Name>
+							<Private-Package/>
 							<_snapshot>${osgi.qualifier}</_snapshot>
+							<_removeheaders>
+								Bnd-LastModified,Built-By,Build-Jdk,Created-By,Tool,Build-Jdk-Spec,
+								Include-Resource,Require-Capability,Private-Package
+							</_removeheaders>
 						</instructions>
 					</configuration>
 				</plugin>

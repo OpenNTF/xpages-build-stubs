@@ -22,4 +22,8 @@ public abstract class HttpService {
 			HttpServletResponseAdapter httpResponse) throws ServletException, IOException;
 
 	public abstract void getModules(List<ComponentModule> modules);
+	
+	public boolean isXspUrl(String var1, boolean var2) {
+		return false;
+	}
 }
