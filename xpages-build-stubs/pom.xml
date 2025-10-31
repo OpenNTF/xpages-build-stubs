@@ -41,6 +41,8 @@
 	</properties>
 	
 	<modules>
+		<module>com.ibm.notes.java.api</module>
+		<module>com.ibm.notes.java.api.win32.linux</module>
 		<module>com.ibm.pvc.jndi.provider.java</module>
 		<module>com.ibm.pvc.servlet</module>
 		<module>com.ibm.domino.xsp.bootstrap</module>
