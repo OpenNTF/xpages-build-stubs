@@ -29,6 +29,7 @@
 						<Bundle-Version>12.0.2.${osgi.qualifier}</Bundle-Version>
 						<Embed-Dependency>NCSO</Embed-Dependency>
 						<Fragment-Host>com.ibm.notes.java.api</Fragment-Host>
+						<Import-Package>*;resolution:=optional</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>
