@@ -72,4 +72,8 @@ public class LCDEnvironment implements LCDRequestHandler {
 	public List<HttpService> getServices() {
 		return null;
 	}
+	
+	public List<ComponentModule> getActiveModules() {
+		return null;
+	}
 }

@@ -6,14 +6,14 @@
 		<artifactId>parent-xsp-stubs</artifactId>
 		<version>1.2.0</version>
 	</parent>
-	<artifactId>com.ibm.xsp.extsn</artifactId>
+	<artifactId>com.ibm.notes.java.api.win32.linux</artifactId>
 	<packaging>bundle</packaging>
 	
 	<dependencies>
 		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>com.ibm.xsp.core</artifactId>
-			<version>${project.version}</version>
+			<groupId>com.hcl.domino</groupId>
+			<artifactId>NCSO</artifactId>
+			<version>12.0.2EAP5</version>
 		</dependency>
 	</dependencies>
 	
@@ -23,6 +23,14 @@
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
 				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>${project.artifactId};singleton:=true</Bundle-SymbolicName>
+						<Bundle-Version>12.0.2.${osgi.qualifier}</Bundle-Version>
+						<Embed-Dependency>NCSO</Embed-Dependency>
+						<Fragment-Host>com.ibm.notes.java.api</Fragment-Host>
+					</instructions>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

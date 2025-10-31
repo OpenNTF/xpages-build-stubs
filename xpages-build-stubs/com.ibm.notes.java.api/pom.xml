@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.openntf.xsp.stubs</groupId>
+		<artifactId>parent-xsp-stubs</artifactId>
+		<version>1.2.0</version>
+	</parent>
+	<artifactId>com.ibm.notes.java.api</artifactId>
+	<packaging>bundle</packaging>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>${project.artifactId};singleton:=true</Bundle-SymbolicName>
+						<Bundle-Version>12.0.2.${osgi.qualifier}</Bundle-Version>
+						<Eclipse-ExtensibleAPI>true</Eclipse-ExtensibleAPI>
+						<Export-Package>Acme,Acme.JPM.Encoders,com.hcl.domino.module.nsf,com.ibm
+ .sslight,com.ibm.sslight.tools,lotus.domino,lotus.domino.agentloader,lo
+ tus.domino.corba,lotus.domino.corba.NameAndObjectUPackage,lotus.domino.
+ cso,lotus.domino.local,lotus.domino.util,lotus.notes,lotus.notes.addins
+ .daytime,lotus.notes.addins,lotus.notes.addins.dominosupport,lotus.note
+ s.addins.dsfclassifier,lotus.notes.addins.dsflearning,lotus.notes.addin
+ s.guru,lotus.notes.addins.ispy,lotus.notes.addins.ispy.net,lotus.notes.
+ addins.ispy.net.dns,lotus.notes.addins.ispy.net.portcheck,lotus.notes.a
+ ddins.ispy.util,lotus.notes.addins.tikaserveraddin,lotus.notes.addins.u
+ til,lotus.notes.apps.reports,lotus.notes.apps.wmsgtrc,lotus.notes.inter
+ nal,lotus.priv.CORBA.iiop,lotus.priv.CORBA.iiop.ssl,lotus.priv.CORBA.ii
+ op.sslight,lotus.priv.CORBA.java.Exception,lotus.priv.CORBA.portable</Export-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
