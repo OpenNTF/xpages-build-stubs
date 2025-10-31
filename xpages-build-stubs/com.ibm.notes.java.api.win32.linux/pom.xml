@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openntf.xsp.stubs</groupId>
 		<artifactId>parent-xsp-stubs</artifactId>
-		<version>1.2.1</version>
+		<version>1.2.2</version>
 	</parent>
 	<artifactId>com.ibm.notes.java.api.win32.linux</artifactId>
 	<packaging>bundle</packaging>
@@ -29,6 +29,7 @@
 						<Bundle-Version>12.0.2.${osgi.qualifier}</Bundle-Version>
 						<Embed-Dependency>NCSO</Embed-Dependency>
 						<Fragment-Host>com.ibm.notes.java.api</Fragment-Host>
+						<Import-Package>*;resolution:=optional</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>
