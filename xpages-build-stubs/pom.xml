@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openntf.xsp.stubs</groupId>
 	<artifactId>parent-xsp-stubs</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<packaging>pom</packaging>
 	
 	<inceptionYear>2024</inceptionYear>
@@ -48,6 +48,7 @@
 		<module>com.ibm.domino.xsp.bootstrap</module>
 		<module>com.ibm.domino.xsp.bridge.http</module>
 		<module>com.ibm.domino.napi</module>
+		<module>com.ibm.domino.napi.impl</module>
 		<module>com.ibm.designer.lib.jsf</module>
 		<module>com.ibm.domino.xsp.adapter</module>
 		<module>com.ibm.xsp.core</module>
