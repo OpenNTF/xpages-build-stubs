@@ -30,10 +30,10 @@
 						<Automatic-Module-Name>${project.artifactId}</Automatic-Module-Name>
 						<_snapshot>${osgi.qualifier}</_snapshot>
 						<Embed-Dependency>servlet-api</Embed-Dependency>
-						<Export-Package>
+						<_exportcontents>
 							javax.servlet;version="2.5.0",
 							javax.servlet.http;version="2.5.0"
-						</Export-Package>
+						</_exportcontents>
 						<Import-Package/>
 					</instructions>
 				</configuration>
