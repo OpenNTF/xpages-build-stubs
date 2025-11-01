@@ -8,6 +8,14 @@
 	</parent>
 	<artifactId>com.ibm.pvc.servlet</artifactId>
 	<packaging>bundle</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+	</dependencies>
 	
 	<build>
 		<plugins>
@@ -21,6 +29,7 @@
 						<Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
 						<Automatic-Module-Name>${project.artifactId}</Automatic-Module-Name>
 						<_snapshot>${osgi.qualifier}</_snapshot>
+						<Embed-Dependency>servlet-api</Embed-Dependency>
 						<Export-Package>
 							javax.servlet;version="2.5.0",
 							javax.servlet.http;version="2.5.0"
