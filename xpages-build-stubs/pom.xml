@@ -51,6 +51,7 @@
 		<module>com.ibm.domino.napi.impl</module>
 		<module>com.ibm.designer.lib.jsf</module>
 		<module>com.ibm.domino.xsp.adapter</module>
+		<module>com.ibm.domino.xsp.adapter.osgi</module>
 		<module>com.ibm.domino.osgi.core</module>
 		<module>com.ibm.xsp.core</module>
 		<module>com.ibm.xsp.extsn</module>
