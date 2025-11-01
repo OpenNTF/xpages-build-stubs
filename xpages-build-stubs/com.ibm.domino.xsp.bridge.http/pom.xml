@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openntf.xsp.stubs</groupId>
 		<artifactId>parent-xsp-stubs</artifactId>
-		<version>1.2.2</version>
+		<version>1.2.3-SNAPSHOT</version>
 	</parent>
 	<artifactId>com.ibm.domino.xsp.bridge.http</artifactId>
 	<packaging>bundle</packaging>
@@ -13,6 +13,11 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>com.ibm.pvc.servlet</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>com.ibm.domino.xsp.bootstrap</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
