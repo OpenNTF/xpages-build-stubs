@@ -57,6 +57,7 @@
 		<module>com.ibm.xsp.domino</module>
 		<module>com.ibm.xsp.extlib.core</module>
 		<module>com.ibm.xsp.extlib.controls</module>
+		<module>com.ibm.jscript</module>
 	</modules>
 	
 	<pluginRepositories>
