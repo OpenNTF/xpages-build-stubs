@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openntf.xsp.stubs</groupId>
 		<artifactId>parent-xsp-stubs</artifactId>
-		<version>1.3.1-SNAPSHOT</version>
+		<version>1.3.1</version>
 	</parent>
 	<artifactId>com.ibm.pvc.servlet</artifactId>
 	<packaging>bundle</packaging>
@@ -29,11 +29,11 @@
 						<Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
 						<Automatic-Module-Name>${project.artifactId}</Automatic-Module-Name>
 						<_snapshot>${osgi.qualifier}</_snapshot>
-						<Embed-Dependency>servlet-api</Embed-Dependency>
-						<Export-Package>
+						<Embed-Dependency>servlet-api;inline=true</Embed-Dependency>
+						<_exportcontents>
 							javax.servlet;version="2.5.0",
 							javax.servlet.http;version="2.5.0"
-						</Export-Package>
+						</_exportcontents>
 						<Import-Package/>
 					</instructions>
 				</configuration>
