@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ibm.designer.runtime.domino.adapter.servlet.LCDAdapterHttpSession;
+import com.ibm.designer.runtime.domino.adapter.servlet.LCDAdapterServletContext;
 import com.ibm.designer.runtime.domino.bootstrap.adapter.HttpServletRequestAdapter;
 import com.ibm.designer.runtime.domino.bootstrap.adapter.HttpServletResponseAdapter;
 import com.ibm.designer.runtime.domino.bootstrap.adapter.HttpSessionAdapter;
@@ -143,5 +144,9 @@ public abstract class ComponentModule {
 
 	public void updateLastModuleAccess() {
 
+	}
+	
+	protected LCDAdapterServletContext createServletContext() {
+		return null;
 	}
 }
