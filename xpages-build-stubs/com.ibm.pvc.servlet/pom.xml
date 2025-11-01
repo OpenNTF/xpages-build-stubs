@@ -29,7 +29,7 @@
 						<Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
 						<Automatic-Module-Name>${project.artifactId}</Automatic-Module-Name>
 						<_snapshot>${osgi.qualifier}</_snapshot>
-						<Embed-Dependency>servlet-api</Embed-Dependency>
+						<Embed-Dependency>servlet-api;inline=true</Embed-Dependency>
 						<_exportcontents>
 							javax.servlet;version="2.5.0",
 							javax.servlet.http;version="2.5.0"
