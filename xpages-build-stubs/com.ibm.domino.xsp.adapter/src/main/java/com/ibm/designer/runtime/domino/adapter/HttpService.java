@@ -26,4 +26,8 @@ public abstract class HttpService {
 	public boolean isXspUrl(String var1, boolean var2) {
 		return false;
 	}
+	
+	public LCDEnvironment getEnvironment() {
+		return null;
+	}
 }

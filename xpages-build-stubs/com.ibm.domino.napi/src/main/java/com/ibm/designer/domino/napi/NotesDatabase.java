@@ -24,4 +24,8 @@ public class NotesDatabase extends NotesHandle {
 	public NotesCollection openCollection(int var1, int var2) throws NotesAPIException {
 		return null;
 	}
+	
+	public final String getDatabasePath() {
+		return null;
+	}
 }

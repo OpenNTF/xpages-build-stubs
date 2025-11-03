@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openntf.xsp.stubs</groupId>
 		<artifactId>parent-xsp-stubs</artifactId>
-		<version>1.3.6</version>
+		<version>1.3.7</version>
 	</parent>
 	<artifactId>com.ibm.domino.xsp.bridge.http</artifactId>
 	<packaging>bundle</packaging>
