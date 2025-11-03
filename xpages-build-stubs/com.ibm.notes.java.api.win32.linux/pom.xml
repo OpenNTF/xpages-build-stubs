@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openntf.xsp.stubs</groupId>
 		<artifactId>parent-xsp-stubs</artifactId>
-		<version>1.3.7-SNAPSHOT</version>
+		<version>1.3.7</version>
 	</parent>
 	<artifactId>com.ibm.notes.java.api.win32.linux</artifactId>
 	<packaging>bundle</packaging>
