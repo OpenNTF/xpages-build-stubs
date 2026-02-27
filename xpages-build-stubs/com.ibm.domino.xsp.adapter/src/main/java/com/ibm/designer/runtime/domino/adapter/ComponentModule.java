@@ -14,7 +14,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ibm.designer.runtime.domino.adapter.ComponentModule.ServletInvoker;
 import com.ibm.designer.runtime.domino.adapter.servlet.LCDAdapterHttpSession;
 import com.ibm.designer.runtime.domino.adapter.servlet.LCDAdapterServletContext;
 import com.ibm.designer.runtime.domino.bootstrap.adapter.HttpServletRequestAdapter;
@@ -24,7 +23,9 @@ import com.ibm.designer.runtime.domino.bootstrap.adapter.HttpSessionAdapter;
 @SuppressWarnings("rawtypes")
 public abstract class ComponentModule {
 	protected abstract class ServletInvoker {
-
+		public abstract OutputStream getOutputStream() throws IOException;
+		
+		public abstract void setHeader(String headerName, String value);
 	}
 
 	public class RestartModuleSignal extends Error {
