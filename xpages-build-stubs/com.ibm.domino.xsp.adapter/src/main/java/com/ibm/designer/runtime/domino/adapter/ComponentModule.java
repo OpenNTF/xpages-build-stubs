@@ -14,6 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ibm.designer.runtime.domino.adapter.ComponentModule.ServletInvoker;
 import com.ibm.designer.runtime.domino.adapter.servlet.LCDAdapterHttpSession;
 import com.ibm.designer.runtime.domino.adapter.servlet.LCDAdapterServletContext;
 import com.ibm.designer.runtime.domino.bootstrap.adapter.HttpServletRequestAdapter;
@@ -148,5 +149,17 @@ public abstract class ComponentModule {
 	
 	protected LCDAdapterServletContext createServletContext() {
 		return null;
+	}
+	
+	protected void writeResourceContent(ServletInvoker invoker, String res) throws IOException {
+		
+	}
+	
+	protected boolean shouldGZip(String paramString, int paramInt) {
+		return false;
+	}
+	
+	protected boolean supportsGzip(ServletInvoker paramServletInvoker) {
+		return false;
 	}
 }
