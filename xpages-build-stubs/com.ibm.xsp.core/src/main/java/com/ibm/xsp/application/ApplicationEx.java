@@ -5,6 +5,7 @@ import javax.faces.context.FacesContext;
 
 import com.ibm.xsp.controller.FacesController;
 import com.ibm.xsp.factory.FactoryLookup;
+import com.ibm.xsp.registry.FacesSharableRegistry;
 
 public abstract class ApplicationEx extends Application {
 	public static ApplicationEx getInstance() {
@@ -21,4 +22,6 @@ public abstract class ApplicationEx extends Application {
 	public abstract String getApplicationProperty(String var1, String var2);
 	
 	public abstract FacesController getController();
+	
+	public abstract FacesSharableRegistry getRegistry();
 }
