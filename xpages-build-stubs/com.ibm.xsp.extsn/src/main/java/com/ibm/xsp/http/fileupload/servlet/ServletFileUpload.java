@@ -10,6 +10,10 @@ import com.ibm.xsp.http.fileupload.FileItemFactory;
 import com.ibm.xsp.http.fileupload.FileUploadException;
 
 public class ServletFileUpload {
+	public static final boolean isMultipartContent(HttpServletRequest var0) {
+		return false;
+	}
+	
 	public ServletFileUpload(FileItemFactory var1) {
 		
 	}

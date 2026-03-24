@@ -1,8 +1,9 @@
-package javax.faces.component;
+package com.ibm.xsp.acl;
 
+import javax.faces.component.StateHolder;
 import javax.faces.context.FacesContext;
 
-public abstract class UIComponentBase extends UIComponent {
+public class ACL implements StateHolder {
 
 	@Override
 	public Object saveState(FacesContext var1) {
@@ -21,8 +22,5 @@ public abstract class UIComponentBase extends UIComponent {
 	@Override
 	public void setTransient(boolean var1) {
 	}
-	
-	@Override
-	public void setRendererType(String var1) {
-	}
+
 }
