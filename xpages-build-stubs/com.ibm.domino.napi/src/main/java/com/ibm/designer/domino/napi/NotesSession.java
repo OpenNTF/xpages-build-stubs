@@ -8,6 +8,10 @@ public class NotesSession extends NotesObject {
 	public NotesDatabase getDatabase(String var1) throws NotesAPIException {
 		return null;
 	}
+	
+	public NotesDatabase getDatabase(int var1) throws NotesAPIException {
+		return null;
+	}
 
 	public NotesDatabase getDatabase(String var1, String var2) throws NotesAPIException {
 		return null;

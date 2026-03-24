@@ -66,6 +66,10 @@ public abstract class ComponentModule {
 		return null;
 	}
 
+	public final Servlet createServlet(String var1, String var2, Map var3) throws ServletException {
+		return null;
+	}
+
 	public ServletContext getServletContext() {
 		return null;
 	}
