@@ -6,4 +6,5 @@ public class Os {
 	public static final native String OSGetEnvironmentString(String var0) throws NException;
 	public static final native String OSGetDataDirectory();
 	public static final native void OSMemFree(long var0) throws NException;
+	public static final native int OSGetEnvironmentInt(String var0) throws NException;
 }
