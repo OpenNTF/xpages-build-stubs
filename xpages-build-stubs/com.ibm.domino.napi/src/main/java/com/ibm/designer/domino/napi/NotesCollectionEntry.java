@@ -7,4 +7,8 @@ public class NotesCollectionEntry extends NotesStruct {
 	public int getNoteID() throws NotesAPIException {
 		return 0;
 	}
+
+	public NotesSummaryItem getItemByName(String itemName) throws NotesAPIException {
+		return null;
+	}
 }
